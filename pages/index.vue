@@ -9,6 +9,17 @@
           :height="blog.eyecatch?.height"
           alt=""
         />
+        <div>
+          <div>
+            {{ blog.category?.name }}
+          </div>
+          <div>
+            {{ blog.title }}
+          </div>
+          <div>
+            {{ blog.publishedAt ?? blog.createdAt }}
+          </div>
+        </div>
       </NuxtLink>
     </li>
   </ul>
